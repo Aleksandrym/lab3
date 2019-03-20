@@ -5,6 +5,7 @@ public class Main {
         Car car = new Car();
         car.name("Honda");
         car.type("Car");
+        car.sidet("Sparco");
         Human Lor = new Human();
         Lor.name("Lor");
         Lor.type("Human");
