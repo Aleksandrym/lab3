@@ -1,17 +1,17 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
-        car.name("Honda");
-        car.type("Car");
-        car.sidet("Sparco");
-        Human Lor = new Human();
-        Lor.name("Lor");
-        Lor.type("Human");
-        System.out.println("Встав рано утром, " + Lor.p1 + " сел в прекрасный автомобиль марки " + car.p1 + " Изобретенный Винтиком и Шпутником");
-        System.out.println("Это было поистине уникальное изобретение, ведь оно работало на газированой воде и сиропе");
-        System.out.println("Марка газированной воды напрямую влияла на поведение автомобиля");
-        System.out.println(Arrays.toString(Gaz_water_types.values()));
+        Human neznaika= new Human();
+        neznaika.name = "Dadya Vania";
+        neznaika.age = 25;
+        neznaika.say_hello();
+        Dog dog = new Dog();
+        dog.name = "Wulf";
+        dog.say_sound();
+        Human gospoga_minoga = new Human();
+        Human worker = new Human();
+        gospoga_minoga.replenish(70);
+        neznaika.withdraw(1);
+        if (neznaika.get_balance().amount <= 0){
+        }
     }
 }

@@ -1,14 +1,27 @@
-public class Human extends whats_moves {
-    String p1;
+class Human extends beast implements Greeting, money_owner{
+    private Monitory_amount current_balance;
+
+    void say_hello(){
+        System.out.println("- Hello, my name is " + name + ", " + age);
+    }
     @Override
-    void name(String name) {
-        p1 = name;
+    public void greet() {
+        say_hello();
     }
 
     @Override
-    void type(String type) {
-        if (type != "Human"){
-            System.out.println("Выберите правильный тип");
-        }
+    public Monitory_amount get_balance() {
+        return current_balance;
     }
+
+    @Override
+    public void withdraw(double amount) {
+        current_balance.amount -= amount;
+    }
+
+    @Override
+    public void replenish(double fs) {
+
+    }
+
 }
